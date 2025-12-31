@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy New Year Panditain</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(pink, red);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: Arial;
+      color: white;
+      text-align: center;
+    }
+    .hidden { display: none; }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      background: white;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🎉 Happy New Year Panditain 🎉</h1>
+  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="200">
+
+  <br><br>
+  <button onclick="start()">Continue ❤️</button>
+
+  <div id="page2" class="hidden">
+    <h1>💖 For u Panditain 💖</h1>
+    <audio id="song" loop>
+      <source src="Good Luck Cham - KS Makhan.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script>
+    function start() {
+      document.getElementById("page2").style.display = "block";
+      document.querySelector("button").style.display = "none";
+      document.getElementById("song").play();
+    }
+  </script>
+
+</body>
+</html>
